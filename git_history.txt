@@ -1,3 +1,15 @@
+commit 10f95bc51fd4ca91e9dce440d553b0ecc5e95e14
+Author: Angelo Bundac <B00175533@mytudublin.ie>
+Date:   Tue Nov 17 17:22:42 2026 +0000
+
+    Still working on them
+
+commit bf5fb95d8f6c3aaae529f862dad91494c1b3c0a9
+Author: Angelo Bundac <B00175533@mytudublin.ie>
+Date:   Sun Nov 15 03:30:26 2026 +0000
+
+    git history #1
+
 commit 86b0c735ae7739ca740368afbd72123359dd78c0
 Author: Angelo Bundac <B00175533@mytudublin.ie>
 Date:   Sun Nov 15 03:25:23 2026 +0000
