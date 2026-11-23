@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 import javax.swing.*;
 
 public class MazeFrame extends JFrame {
@@ -15,20 +17,43 @@ public class MazeFrame extends JFrame {
 		grid[0][0].bottom = false;
 		grid[6][1].top = false;
 		add(new MazeCanvas(grid));
-	
+		generateMazeRandomDFS(0, 0);
+		MazeSolverBFS();
 		
 	}
 	
-	public void GRandom() {
-		// add more.
+	
+	public void generateMazeRandomDFS(int M, int N) {
+		Stack stack = new Stack();
 		
-		// stack and queue
+		Cell test = grid[0][0];
+		
+		
+		for(int i = 0; i < grid.length; i++) {
+			for(int j = 0; j < grid[0].length; j++) {
+				grid[i][j] = new Cell(i, j);
+				int random = (int)(Math.random() * 30);
+				System.out.print(random + "\t");
+			}
+			System.out.println();
+		}
+		
+		stack.push(test);
+		stack.pop();
+		
+			
+	}
+	
+	public void MazeSolverBFS() {
+		
+		
+		
 	}
 	
 	public void initialiseGrid() {
 		for(int i = 0; i < grid.length; i++) {
 			for(int j = 0; j < grid[0].length; j++) {
-				grid[i][j] = new Cell();
+				grid[i][j] = new Cell(i, j);
 			}
 		}
 		
